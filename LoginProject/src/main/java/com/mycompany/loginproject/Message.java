@@ -4,17 +4,15 @@
  */
 package com.mycompany.loginproject;
 
-import java.io.FileWriter;
-import java.util.ArrayList;
-import java.util.Scanner;
-
 /**
  *
  * @author Student
  */
 public class Message {
     
+    
 
+    
 
 
     String messageID;
@@ -108,3 +106,5 @@ public class Message {
     public String getRecipient() { return recipient; }
     public String getMessageText() { return messageText; }
 }
+    
+

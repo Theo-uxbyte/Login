@@ -26,6 +26,7 @@ public class QuickChat {
             System.out.println("2. Show recently sent " +
                                "messages");
             System.out.println("3. Quit");
+            System.out.println("4. Stored Messages");
             System.out.println("Enter choice: ");
             menuChoice = Integer.parseInt(
                          input.nextLine());
@@ -75,18 +76,7 @@ String recipient =input.nextLine();
                                 msg.sentMessage(
                                 sendChoice));
                             
-                            if (sendChoice == 1) {
-                                messages.add(msg);
-                                // Print message details
-                                System.out.println(
-                                    msg.printMessages());
-                            } else if (sendChoice == 2) {
-                                System.out.println(
-                                "Press 0 to delete " +
-                                "the message");
-                            } else if (sendChoice == 3) {
-                                messages.add(msg);
-                            }
+                            Project3.addMessage(msg, sendChoice);
                         }
                     }
                     // Show total messages sent
@@ -103,11 +93,15 @@ String recipient =input.nextLine();
                     System.out.println("Goodbye!");
                     break;
                     
+                case 4:
+                Project3.storedMessagesMenu(input);
+                break;
+                    
                 default:
                     System.out.println("Invalid option.");
             }
             
-        } while (menuChoice != 3);
+        } while (menuChoice != 3 && menuChoice != 4);
     }
 }
 

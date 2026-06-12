@@ -1,2 +1,4 @@
+com\mycompany\loginproject\Part3Test.class
 com\mycompany\loginproject\LoginTest.class
+org\junit\Test.class
 com\mycompany\loginproject\MessageTest.class
